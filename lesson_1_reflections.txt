@@ -1,0 +1,59 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+i used the command
+    FC filea fileb
+or the command 
+    diff -u filea fileb
+that helps the user to find the difference between two versions of a file rather than finding the difference by hand.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+A programmer who uses version control (example GIT) can seek out his or her bugs more efficently 
+And its easier to revert to earlier versions of the code.
+   
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+Pros
+-> You can always ensure your commits make logical sense and compile 
+
+Cons
+-> There is always room for human error of making too few (or many) commits
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+Version control systems such as git allows to commit multiple files at once because programming requires many different files to be edited at once. 
+However, documents which are saved on google docs are not related to each other in any ways.
+
+How can you use the commands git log and git diff to view the history of files?
+
+>>git log
+
+command allows us to view all the commits by the user in the repository. Each commit has its own serial code which can identify the commit. 
+
+>>git diff first_serial second_serial 
+
+command allows to differentiate each commit by showing in the console which lines were added and which lines were deleted.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+Using version control helps the programmer be more confident in programming because it's easier to spot bugs in the commits and find where the programmer has made a mistake
+
+This can be done by 
+
+Reviewing the commits in the git log by 
+
+>>git checkout commit_serial
+
+(Note that this could be reverted by >>git reflog )
+
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Version Control.
